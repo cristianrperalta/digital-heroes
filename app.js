@@ -18,4 +18,8 @@ app.get('/heroes', function(req, res){
     res.sendFile(rutaFile)
 })
 
+app.get('*', function(req, res){
+    res.send('Not found')
+})
+
 app.listen(3000)
